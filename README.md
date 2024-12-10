@@ -1,2 +1,2 @@
 # Vorduku
-Word-based puzzle game. 
+Open-Source Word-based puzzle game built using react native.
