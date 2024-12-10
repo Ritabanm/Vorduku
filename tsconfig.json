@@ -1,0 +1,29 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./",  // Set the base URL to the root of your project
+    "paths": {
+      "@/*": ["./*"],  // Simplify access to all directories under the root
+      "components/*": ["app/components/*"],  // Access components with 'components/XYZ'
+      "services/*": ["app/services/*"]  // Access services with 'services/XYZ'
+    },
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native"  // Specific for React Native
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
